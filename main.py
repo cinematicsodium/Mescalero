@@ -39,7 +39,10 @@ questions: list[str] = [
 ]
 
 st.title("Mescalero Chatbot")
-st.caption("Interact with a chatbot to learn about the Mescalero Apache Tribe.")
+st.write("Interact with a chatbot to learn about the Mescalero Apache Tribe.")
+
+st.caption("ℹ️ Chatbot Information")
+st.caption("This chatbot uses the OpenAI model gpt-4o-mini and references a vector database that contains information about the Mescalero Apache Tribe.")
 
 prompt = None
 st.subheader("📚 Choose or Type a Question")
