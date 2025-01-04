@@ -47,7 +47,6 @@ question = st.selectbox("Predefined Questions:", [""] + questions)
 if st.button("Ask") and question:
     prompt = question
 
-st.title('')
 st.subheader("💬 Chatbot")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I assist you?"}]
