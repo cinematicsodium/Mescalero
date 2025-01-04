@@ -2,7 +2,7 @@ import re
 import streamlit as st
 from openai import OpenAI
 
-openai_api_key = None
+openai_api_key = st.secrets['API_KEY']
 assistant_id = "asst_1YBB5MbnJ3OVGQm6FFbWLRxR"
 client = OpenAI(api_key=openai_api_key)
 assistant = client.beta.assistants.retrieve(
