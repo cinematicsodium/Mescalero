@@ -89,7 +89,7 @@ if prompt:
 
             last_message = messages.data[0]
             text = last_message.content[0].text.value
-            pattern = r'【*?】'
+            pattern = r'【.*?】'
             response = re.sub(pattern, '', text)
             st.session_state.messages.append({"role": "assistant", "content": response})
             st.chat_message("assistant").write(response)
