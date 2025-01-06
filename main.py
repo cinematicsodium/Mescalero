@@ -13,6 +13,8 @@ thread = client.beta.threads.create()
 
 questions: list[str] = [
     # Leadership and Governance
+    "What are the main provisions of the Mescalero Apache tribal code?",
+    "How is the Mescalero Apache tribal code enforced within the community?",
     "Who is the tribal president of the Mescalero Apache Tribe?",
     "What roles do tribal council members play?",
     "How is leadership structured within the Mescalero Apache Tribe's administration?",
@@ -26,8 +28,6 @@ questions: list[str] = [
     
     # Education and Youth Development
     "What partnerships enhance education and youth development programs?",
-    "How are contemporary challenges reflected in educational curricula and community programs?",
-    
     # Health and Social Services
     "What mental health services does the Mescalero System of Care provide?",
     "How does the tribe address health disparities through the Community Health Representative Program?",
