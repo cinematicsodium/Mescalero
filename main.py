@@ -42,7 +42,8 @@ st.title("Mescalero Chatbot")
 st.write("Interact with a chatbot to learn about the Mescalero Apache Tribe.")
 
 st.caption("ℹ️ Chatbot Information")
-st.caption("This chatbot uses the OpenAI model gpt-4o-mini and references a vector database with information about the Mescalero Apache Tribe. It refreshes after every response and does not retain memory of previous interactions.")prompt = None
+st.caption("This chatbot uses the OpenAI model gpt-4o-mini and references a vector database with information about the Mescalero Apache Tribe. It refreshes after every response and does not retain memory of previous interactions.")
+prompt = None
 st.subheader("📚 Choose or Type a Question")
 question = st.selectbox("Predefined Questions:", [""] + questions)
 if st.button("Ask") and question:
