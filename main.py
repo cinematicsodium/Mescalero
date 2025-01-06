@@ -89,11 +89,8 @@ if prompt:
 
             last_message = messages.data[0]
             response = last_message.content[0].text.value
-            regex = r'【\d:\d†[A-Za-z]+】'
-            matches = re.findall(regex, response)
-            if matches:
-                for match in matches:
-                    response = response.replace(match, "").replace("  ", " ")
+            pattern = r"【.*?】"
+            response = re.sub(pattern, '', text)
             st.session_state.messages.append({"role": "assistant", "content": response})
             st.chat_message("assistant").write(response)
     except Exception as e:
